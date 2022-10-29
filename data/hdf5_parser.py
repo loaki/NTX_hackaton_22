@@ -96,23 +96,23 @@ def eeg_label(filename):
     for index, seq in enumerate(df_serie):
         if event_index < len(events_date) and df_serie.keys()[index] > events_date[event_index]:
             start = index - 100 if index - 100 > 0 else 0
-            df_events.append(df_serie.iloc[start:index+250])
+            df_events.append(df_serie.iloc[start:index+150])
             event_index += 1
 
             # print events
-            # matrix = []
-            # for event_seq in df_serie.iloc[start:index+250]:
-            #     matrix.append([event_seq])
-            # xaxis = np.array(matrix)
-            # plt.plot(xaxis)
-            # plt.show()
+            matrix = []
+            for event_seq in df_serie.iloc[start:index+150]:
+                matrix.append([event_seq])
+            xaxis = np.array(matrix)
+            plt.plot(xaxis)
+            plt.show()
 
     print(len(df_events))
-    hf = h5py.File('none_label.hdf5', 'w')
-    for index, data in enumerate(df_events):
-        hf.create_dataset(f'right{index}', data=data)
-    hf.close()
-    return df_events
+    # hf = h5py.File('none_label.hdf5', 'w')
+    # for index, data in enumerate(df_events):
+    #     hf.create_dataset(f'right{index}', data=data)
+    # hf.close()
+    # return df_events
 
 def read_hdf5(filename):
     f = h5py.File(filename, 'r')
@@ -129,6 +129,6 @@ if __name__ == '__main__':
     eeg_label_none = 'none.hdf5'
     # print(send_ecg(ecg_filename))
     # send_eeg(eeg_filename)
-    test = eeg_label(eeg_label_none)
+    test = eeg_label(eeg_label_left)
     # print(test)
     # read_hdf5('right_label.hdf5')
