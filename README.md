@@ -11,7 +11,7 @@
 * Data acquisition and processing with Timeflux
 * Labeling dataset for assets (left, right, rest) ~60 records each 
 * Training classification model with sklearn SVC
-* Recognize eye movements in real time with our model to interact in game
+* Recognize eye movements in real time to interact in game
 
 ![svm_report](/assets/svm_report.png)
 ![img1](/assets/img1.jpg)
