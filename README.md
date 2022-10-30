@@ -13,6 +13,7 @@
 * Training classification model with sklearn SVC
 * Recognize eye movements in real time to interact in game
 
+![emg_eeg](/assets/emg_eeg_right_eye.png)
 ![svm_report](/assets/svm_report.png)
 ![img1](/assets/img1.jpg)
 ![img2](/assets/img2.jpg)
