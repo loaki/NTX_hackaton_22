@@ -7,7 +7,7 @@ INS: Immersive Neuro Simulation
 
 ### Model
 
-Classification with sklearn SVC to recognize eye movements
+Classification with sklearn SVC to recognize eye movements in real time
 
 ![svm_report](/assets/svm_report.png)
 ![img1](/assets/img1.jpg)
