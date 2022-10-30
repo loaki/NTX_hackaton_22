@@ -115,11 +115,24 @@ def eeg_label(filename):
     # return df_events
 
 def read_hdf5(filename):
-    f = h5py.File(filename, 'r')
-    for key in f.keys():
-        print(key)
-        for column in f[key]:
-            print(column)
+    # f = h5py.File(filename, 'r')
+    # for key in f.keys():
+    #     print(key)
+    #     for column in f[key]:
+    #         print(column)
+
+    try:
+        events = pd.read_hdf(filename, 'events')
+        df = pd.read_hdf(filename, 'raw')
+    except:
+        print('key not found')
+        return 0
+
+    for column in df:
+        df_serie = df[column]
+    
+    for index, seq in enumerate(df_serie):
+        print(df_serie.keys()[index])
 
 if __name__ == '__main__':
     ecg_filename = 'ecg.hdf5'
@@ -129,6 +142,6 @@ if __name__ == '__main__':
     eeg_label_none = 'none.hdf5'
     # print(send_ecg(ecg_filename))
     # send_eeg(eeg_filename)
-    test = eeg_label(eeg_label_left)
+    # test = eeg_label(eeg_label_left)
     # print(test)
-    # read_hdf5('right_label.hdf5')
+    read_hdf5('left.hdf5')
