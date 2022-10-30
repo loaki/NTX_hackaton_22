@@ -7,15 +7,11 @@ INS: Immersive Neuro Simulation
 
 ## Model
 
-EEG sensors with Bitalino
-
-Data acquisition and processing with Timeflux
-
-Labeling dataset for assets (left, right, rest) ~60 records each 
-
-Training classification model with sklearn SVC
-
-Recognize eye movements in real time with our model
+* EEG sensors with Bitalino
+* Data acquisition and processing with Timeflux
+* Labeling dataset for assets (left, right, rest) ~60 records each 
+* Training classification model with sklearn SVC
+* Recognize eye movements in real time with our model
 
 ![svm_report](/assets/svm_report.png)
 ![img1](/assets/img1.jpg)
@@ -26,5 +22,3 @@ Recognize eye movements in real time with our model
 https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
 
 https://github.com/timeflux
-
-Then scientifics found correlation between IRM and lie detection which led us to think it’s possible with EEG, ECG and EMG signals to interpret those behaviours.
