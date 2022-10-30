@@ -31,6 +31,7 @@ from sklearn.model_selection import train_test_split
 
 Y = df['label']
 X = df.drop(columns="label")
+print(type(X))
 
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size =1, random_state = 0)
 

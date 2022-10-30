@@ -128,11 +128,12 @@ def read_hdf5(filename):
         print('key not found')
         return 0
 
-    for column in df:
-        df_serie = df[column]
+    print(df)
+    # for column in df:
+    #     df_serie = df[column]
     
-    for index, seq in enumerate(df_serie):
-        print(df_serie.keys()[index])
+    # for index, seq in enumerate(df_serie):
+    #     print(df_serie.keys()[index])
 
 if __name__ == '__main__':
     ecg_filename = 'ecg.hdf5'
