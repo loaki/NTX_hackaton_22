@@ -1,4 +1,4 @@
-INS: Immersive Neuro Simulation
+# INS: Immersive Neuro Simulation
 
 ## About / Synopsis
 
