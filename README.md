@@ -5,7 +5,9 @@ INS: Immersive Neuro Simulation
 * Problematic: How to create an immersive world by linking computer interface and human biosignals.
 * Prototype
 
-### Screenshots
+### Model
+
+Classification with sklearn SVC to recognize eye movements
 
 ![svm_report](/assets/svm_report.png)
 ![img1](/assets/img1.jpg)
