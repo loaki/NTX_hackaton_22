@@ -38,8 +38,8 @@ Sample:
 ### Screenshots
 
 ![svm_report](/assets/svm_report.png)
-![img1](/assets/img1.png)
-![img2](/assets/img2.png)
+![img1](/assets/img1.jpg)
+![img2](/assets/img2.jpg)
 
 ### Features
 
