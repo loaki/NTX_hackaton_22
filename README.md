@@ -8,9 +8,13 @@ INS: Immersive Neuro Simulation
 ## Model
 
 EEG sensors with Bitalino
+
 Data acquisition and processing with Timeflux
+
 Labeling dataset for assets (left, right, rest) ~60 records each 
+
 Training classification model with sklearn SVC
+
 Recognize eye movements in real time with our model
 
 ![svm_report](/assets/svm_report.png)
